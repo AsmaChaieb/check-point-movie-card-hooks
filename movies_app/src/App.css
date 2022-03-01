@@ -1,0 +1,108 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #02162b;
+text-align: center;
+}
+
+
+
+header 
+{
+padding: 42px 15px Opx;
+}
+
+h1
+{
+color: white;
+font-size: 48px;
+font-weight: 50px;}
+
+.searchbox{
+width: 200px;
+height: 50px;
+background-color: beige;
+border-radius: 10px;
+color: black;
+margin: 20px;
+}
+.add_btn{ 
+width: 200px;
+height: 50px;
+background-color: rgb(173, 144, 196);
+border-radius: 10px;
+color: rgb(4, 3, 51);
+margin: 20px;
+font-size: large;
+font-family: Arial, Helvetica, sans-serif;
+}
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: rgb(96, 11, 175);
+}
+.card{
+    border: 2px solid white;
+    width: 25%;
+    margin: 5px;
+    display: grid;
+}
+.titre{
+color: rgb(237, 248, 248);
+padding: 5px;  
+}
+.image{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: -4px -4px 5px 5px rgb(115, 81, 209);
+}
+.descrip{
+    width: 40%;
+    margin: auto;
+    color: azure;
+    text-justify: auto;
+}
+.rate{
+    color: aliceblue;
+}
+.headerr{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+.logo{
+    width: 100px;
+}
+.application{
+    color: rgb(223, 69, 100);
+}
+.liste{
+    margin-top: 10px;
+}
+
+.newMovie{
+    width: 60%;
+    margin: auto;
+    background-color: azure;
+}
+/* 
+.formulaire{
+    background-color: azure;
+    border-radius: 10px;
+}
+.form{
+    background-color:rgb(185, 163, 228);
+} */
+
+.adding{
+    background-color: rgb(231, 227, 222);
+}
+.mb-3{
+    color: #eff6fd;
+    text-align: left;
+
+}
