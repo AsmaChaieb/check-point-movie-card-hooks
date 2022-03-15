@@ -1,6 +1,7 @@
 import React from 'react'
 import StarRatingComponent from 'react-star-rating-component' ;
 import {Link} from 'react-router-dom'
+import { Button } from 'react-bootstrap';
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
 
@@ -31,8 +32,11 @@ const MovieCard = ({movie}) =>
                 starCount={5}
                 value={movie.Rating} />
             </h2> 
-               <button className='triler-btn'> Trailer Link </button>
-               
+               <Link to={`/description/${movie.Title}`}> 
+                <Button>
+                trailer
+                </Button>
+              </Link>
                </div>
 
             </div> 

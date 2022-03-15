@@ -20,7 +20,7 @@ function App() {
         Rating: 4,
         PosterURL:
         "https://www.apple.com/fr/tv-pr/shows-and-films/s/see/images/show-home-graphic-header/4x1/Apple_TV_See_Season_2_key_art_graphic_header_4_1_show_home.jpg.og.jpg?1634104759153",
-        trilerLink:"https//www.youtube.com/watch?v=7Rg0y7NT1gU" ,
+        trilerLink:"https//www.youtube.com/embed?v=7Rg0y7NT1gU" ,
     
       },
     {
@@ -30,7 +30,7 @@ function App() {
         Rating: 2,
         PosterURL:
         "https://i.egycdn.com/pic/WmFwZndlY21ITm9ObW1qbUVFY2FtVEVtRXdUWVRi.jpg",
-        trilerLink:"https://www.youtube.com/watch?v=zlgco9hNJpg"
+        trilerLink:"https://www.youtube.com/embed/?v=zlgco9hNJpg"
     },
     {
         Title: "The witcher",
@@ -39,7 +39,7 @@ function App() {
         Rating: 3,
         PosterURL:
         "https://www.filmlore.no/wp-content/uploads/2021/10/witcher2-1024x576.jpg",
-        trilerLink:"https://www.youtube.com/watch?v=ndl1W4ltcmg"
+        trilerLink:"https://www.youtube.com/embed/?v=ndl1W4ltcmg"
     },
     {
         Title: "Breaking bad",
@@ -48,7 +48,7 @@ function App() {
         Rating: 4,
         PosterURL:
         "https://fr.web.img3.acsta.net/c_310_420/pictures/19/06/18/12/11/3956503.jpg",
-        trilerLink:"https://www.youtube.com/watch?v=HhesaQXLuRY"
+        trilerLink:"https://www.youtube.com/embed/?v=HhesaQXLuRY"
     },
     {
         Title: "Paranormal",
@@ -57,7 +57,7 @@ function App() {
         Rating: 5,
         PosterURL:
         "https://resizing.flixster.com/UL7sNvg2Y1unjIzDKXq8bOeL3WA=/fit-in/1152x864/v2/https://flxt.tmsimg.com/assets/p18925783_b_h9_aa.jpg",
-        trilerLink:"https://www.youtube.com/watch?v=LFtRkDC7aHc"
+        trilerLink:"https://www.youtube.com/embed/?v=LFtRkDC7aHc"
       },
     {
         Title: "Peaky blinders",
@@ -66,7 +66,7 @@ function App() {
         Rating: 3,
         PosterURL:
         "https://i2-prod.birminghammail.co.uk/incoming/article22381553.ece/ALTERNATES/s810/0_Peaky-Blinders.jpg",
-        trilerLink:"https://www.youtube.com/watch?v=oVzVdvGIC7U"
+        trilerLink:"https://www.youtube.com/embed/?v=oVzVdvGIC7U"
     
       }
     
@@ -107,16 +107,15 @@ const handleAdd = (newMovie) => {
             path="/description/:id"
             element={<Description movies={movies} />}
           />
-        </Routes>
-      <Routes>
-        <Route  path='/description/Title' element={ <Description /> }/>
+     
+            {/* <Route  path='/description/Title' element={ <Description /> }/> */}
       </Routes>
 
      
-      <div className='liste'>
+      {/* <div className='liste'>
       <ListMovies movies={movies.filter(el=> el.Rating >= rate && el.Title.toLowerCase().includes(keyword.trim().toLowerCase()))} />
 
-      </div>
+      </div> */}
     </div>
   );
 }
